@@ -9,7 +9,7 @@ export default {
     background: 'white'
   },
   head: {
-    title: 'EFContact Frontend',
+    title: 'EFContact Administration',
     htmlAttrs: {
       lang: 'en'
     },
@@ -20,26 +20,69 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/assets/images/neptune.png' },
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp' }
     ],
 
     script: [
-      // {
-      //   src: "/assets/js/vendor/jquery.min.js",
-      //   type: "text/javascript",
-      //   body: true
-      // },
-      // {
-      //   src: "/assets/js/vendor/popper.min.js",
-      //   type: "text/javascript",
-      //   body: true
-      // },
+      {
+        src: "/assets/plugins/jquery/jquery-3.5.1.min.js",
+        type: "text/javascript",
+        body: true
+      },
+      {
+        src: "/assets/plugins/bootstrap/js/bootstrap.min.js",
+        type: "text/javascript",
+        body: true
+      },
+      {
+        src: "/assets/plugins/perfectscroll/perfect-scrollbar.min.js",
+        type: "text/javascript",
+        body: true
+      },
+      {
+        src: "/assets/plugins/jquery/jquery-3.5.1.min.js",
+        type: "text/javascript",
+        body: true
+      },
+      {
+        src: "/assets/plugins/pace/pace.min.js",
+        type: "text/javascript",
+        body: true
+      },
+      {
+        src: "/assets/plugins/apexcharts/apexcharts.min.js",
+        type: "text/javascript",
+        body: true
+      },
+      {
+        src: "/assets/js/main.min.js",
+        type: "text/javascript",
+        body: true
+      },
+      {
+        src: "/assets/js/custom.js",
+        type: "text/javascript",
+        body: true
+      },
+      {
+        src: "/assets/js/pages/dashboard.js",
+        type: "text/javascript",
+        body: true
+      },
     ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    // '~/assets/css/normalize.css',
+    '~/assets/plugins/bootstrap/css/bootstrap.min.css',
+    '~/assets/plugins/perfectscroll/perfect-scrollbar.css',
+    '~/assets/plugins/pace/pace.css',
+    '~/assets/css/main.min.css',
+    '~/assets/css/custom.css',
 
     'quill/dist/quill.snow.css',
     'quill/dist/quill.bubble.css',
